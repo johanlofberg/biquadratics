@@ -1,7 +1,7 @@
 # Biquadratics
 
 Reproducible computations for research on biquadratic forms, sum-of-squares
-rank, and related extremal graph problems by Johan Löfberg and collaborators.
+rank, and related extremal graph problems.
 
 | Project | Contents |
 |---|---|
@@ -28,5 +28,3 @@ searches, data formats, and the optional independent C++ check.
 The [claim-to-evidence index](second_order_zarankiewicz_numbers/CLAIMS.md)
 distinguishes exact finite results, supporting checks of analytic theorems,
 and unresolved research cases.
-
-Software and accompanying documentation are provided under the [MIT license](LICENSE).
