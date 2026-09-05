@@ -27,10 +27,12 @@ def display(name,items,width=3):
     return '\\[\n'+name+r'=\left\{\begin{gathered}'+'\n'+',\\\\\n'.join(rows)+'\n'+r'\end{gathered}\right\}.'+'\n\\]\n'
 weak=json.loads((root/'witnesses'/'weak_7x7_total28.json').read_text())
 strong=json.loads((root/'witnesses'/'RW3_7x7_total31.json').read_text())
+strong32=json.loads((root/'witnesses'/'RW3_7x7_total32.json').read_text(encoding='utf-8'))
 extra=load('benchmark77_extensions.json')
 extras=[[divmod(e['edge'][0],7),divmod(e['edge'][1],7)] for e in extra['decisions'] if e['accepted']]
 text='A weak-optimal augmentation is\n'+display(r'E_2^{\mathrm{wk}}',edges_tex(weak['e2']))
 text+='Its seven accepted extra two-edges are\n'+display(r'\mathcal E_{\mathrm{extra}}',edges_tex(extras))
 text+='A total-31 recursive witness on the same base uses\n'+display(r'E_2^{31}',edges_tex(strong['e2']))
+text+='An improved total-32 recursive witness on the same base uses\n'+display(r'E_2^{32}',edges_tex(strong32['e2']))
 (root/'paper'/'benchmark_data.tex').write_text(text,encoding='utf-8',newline='\n')
 print('Regenerated manuscript tables and explicit 7x7 supports.')

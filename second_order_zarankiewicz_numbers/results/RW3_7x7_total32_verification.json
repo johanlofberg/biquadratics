@@ -1,0 +1,44 @@
+{
+  "benchmark_filter": {
+    "accepted": true,
+    "reason": "accepted"
+  },
+  "criterion": "RW3",
+  "fast": {
+    "accepted": true,
+    "criterion": "RW3",
+    "residual_components": 0,
+    "resolution_order": [
+      1,
+      3,
+      6,
+      7,
+      8,
+      10,
+      0,
+      5,
+      9,
+      4,
+      2
+    ],
+    "resolved": true,
+    "unresolved_edges": []
+  },
+  "reference": {
+    "accepted": true,
+    "contradiction": false,
+    "e1": 21,
+    "e2": 11,
+    "injective": true,
+    "m": 7,
+    "missing_count": 0,
+    "missing_examples": [],
+    "n": 7,
+    "orthogonal_class_pairs": 496,
+    "resolved": true,
+    "rounds": 7,
+    "selected_edges": 32
+  },
+  "total": 32,
+  "verified": true
+}

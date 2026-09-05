@@ -15,7 +15,8 @@ The released counterparts are in results/, witnesses/, and certificates/.
 | Explicit 5 x 4 and three-column examples | python reproduce.py verify | paper_*.json and chain_*.json in witnesses/ |
 | z_wL(7,7)=28 | python reproduce.py benchmark77 | weak77_upper_python.json; fano_symmetry.json; weak_7x7_total28.json |
 | Seven accepted extensions among 91 | python reproduce.py verify | benchmark77_extensions.json and seven total29 witness files |
-| zRL(7,7)>=31 | discover 7 7 21 31 --criterion benchmark | RW3_7x7_total31.json |
+| zRL(7,7)>=31 (earlier witness) | discover 7 7 21 31 --criterion benchmark | RW3_7x7_total31.json |
+| zRL(7,7)>=32 | python reproduce.py benchmark77 | witnesses/RW3_7x7_total32.json; results/RW3_7x7_total32_verification.json |
 | 1,139 / 1,052 / 119 Gram survivors at totals 13 / 14 / 15 | python reproduce.py survivors | gram_survivors.json, including every canonical class |
 | Appendix finite checks and 180 rational checks | python reproduce.py all | appendix_verification.json |
 | Signed scan from the internal research directions | python reproduce.py research | signed_scan.json |

@@ -1,12 +1,13 @@
 """Release reproduction tasks and expected mathematical results."""
 import json,hashlib,platform,time
 from pathlib import Path
-from .io import ROOT,PROJECT_ROOT,write_json,verify,witness
+from .io import ROOT,PROJECT_ROOT,write_json,verify,witness,unpack
 from .bases import enumerate_bases,fano_classification
 from .search import exhaustive,greedy,fano_base
 from .benchmark import weak77_upper,extensions
 from .survivors import enumerate_survivors
 from .fixtures import export_fixtures
+from .weak import weak_check
 
 SPECS=[
  (4,4,9,12,'RW3+',0),(4,4,9,11,'RW3+',0),(4,4,9,10,'RW3+',6),
@@ -48,6 +49,22 @@ def run_enumerations(reference=False):
         results[f'{m}x{n}:{criterion}:{total}']=r['accepted_total']
     return results
 
+def run_total32():
+    data=greedy(7,7,21,32,'RW3+',seed=20260905,restarts=250)
+    if data.get('total')!=32:raise AssertionError('7x7 total-32 discovery failed')
+    data['criterion']='RW3'
+    data['provenance']['verification_note']=(
+        'Discovered with RW3+; independently verified under the stronger RW3 '
+        'test and the original benchmark filter.')
+    result=verify(data)
+    m,n,e1,e2=unpack(data)
+    result['benchmark_filter']=weak_check(m,n,e1,e2,w3=False,explain=True)
+    if not result['benchmark_filter']['accepted']:
+        raise AssertionError('7x7 total-32 benchmark filter failed')
+    write_json(ROOT/'witnesses'/'RW3_7x7_total32.json',data)
+    write_json(ROOT/'results'/'RW3_7x7_total32_verification.json',result)
+    return data
+
 def run_benchmark():
     upper=weak77_upper()
     expected=[0,1,98,2305,12715,10920,681,2,0]
@@ -59,7 +76,8 @@ def run_benchmark():
     if (ext['candidates'],ext['accepted_count'])!=(91,7):raise AssertionError('7x7 extensions changed')
     lower=greedy(7,7,21,31,'benchmark',restarts=1000)
     if lower.get('total')!=31:raise AssertionError('7x7 total-31 discovery failed')
-    return {'weak_upper':28,'extensions':7,'recursive_lower':31}
+    run_total32()
+    return {'weak_upper':28,'extensions':7,'recursive_lower':32}
 
 def verify_release():
     results={}

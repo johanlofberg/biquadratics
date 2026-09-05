@@ -12,11 +12,13 @@ verifiers for the paper by Johan Löfberg and Liqun Qi.
 | 6 x 4 | 14 | 16 |
 | 5 x 5 | 16 | 17 |
 | 7 x 4 | 17 | 19 |
-| 7 x 7 | 28 | at least 31 |
+| 7 x 7 | 28 | at least 32 |
 
 The 5 x 5 and 7 x 4 recursive-line entries strengthen version 13 to exact
 values. The specified 7 x 7 weak augmentation has exactly seven accepted
 extensions among 91 candidates under S, W2, W2prime, and RW3.
+The total-32 witness is independently verified under the base RW3 rule
+and the same benchmark filter. The earlier total-31 witness is retained.
 
 ## Reproduce
 
@@ -58,7 +60,7 @@ Individual tasks:
 python reproduce.py enumerate 6 4 12 17
 python reproduce.py enumerate 7 4 13 18 --criterion weak
 python reproduce.py discover 5 5 12 17
-python reproduce.py discover 7 7 21 31 --criterion benchmark
+python reproduce.py discover 7 7 21 32 --criterion RW3+ --seed 20260905 --restarts 250
 python reproduce.py benchmark77
 python reproduce.py survivors
 ~~~
@@ -66,6 +68,13 @@ python reproduce.py survivors
 Numeric arguments are rows, columns, fixed E1 size, and target total.
 Seeded discovery returns a verified witness or an explicit failure at its
 restart limit. Discovery failure is never an upper-bound proof.
+
+The benchmark77 command and the full all command also regenerate the
+total-32 witness using the stated seed, verify it under the stronger base
+RW3 rule with both implementations, check S, W2 and W2prime, and save
+witnesses/RW3_7x7_total32.json and results/RW3_7x7_total32_verification.json.
+The verify command independently checks the archived total-32 witness
+alongside all other saved witnesses.
 
 ## Independent C++ check
 

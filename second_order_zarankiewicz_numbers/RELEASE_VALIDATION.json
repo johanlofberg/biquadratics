@@ -17,13 +17,21 @@
     "reference_enumerations": false,
     "research_scan": true
   },
-  "github_ci_configured_but_not_run_remotely": true,
+  "github_ci_configured_but_not_run_remotely": false,
   "independent_cpp": {
     "accepted_cases": 517,
     "all_agree": true,
     "compiler": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r8) 13.2.0",
     "complete_enumeration_counts_agree": true,
     "predicate_cases": 6150
+  },
+  "initial_release_github_ci": {
+    "conclusion": "success",
+    "python_versions": [
+      "3.10",
+      "3.14"
+    ],
+    "url": "https://github.com/johanlofberg/biquadratics/actions/runs/33966545273"
   },
   "note": "Numerical baseline validation preceded repository packaging. Repository packaging changes documentation, workflow location, citation links, and archive prefix; search and verification algorithms are unchanged.",
   "paper_pdf_all_pages_visually_reviewed": true,
@@ -37,8 +45,21 @@
   "python_310_syntax_parsed": true,
   "regenerated_json_records_compared_with_release": 224,
   "repository_layout": "biquadratics/second_order_zarankiewicz_numbers",
-  "saved_witnesses_verified": 83,
+  "saved_witnesses_verified": 84,
   "scope": "Scripts, data, witnesses, documentation, and generated tables.",
   "source_SODN_13_preserved": true,
+  "total32_update": {
+    "all_84_witnesses_verified": true,
+    "all_91_extensions_rechecked": true,
+    "base_RW3_independent_checks_passed": true,
+    "benchmark_filter_passed": true,
+    "date": "2026-09-05",
+    "discovery_matches_archived_witness": true,
+    "full_prior_enumerations_unchanged": true,
+    "restart": 2,
+    "restart_limit": 250,
+    "seed": 20260905,
+    "unittest_methods_passed": 6
+  },
   "unittest_methods_passed": 6
 }
