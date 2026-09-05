@@ -1,0 +1,8 @@
+{
+  "all_required_computations_passed": true,
+  "elapsed_seconds": 45.632,
+  "paper_sha256": "e8de1e69e4f7b6839e1acca44be156f0147d23e90d0341d362086704dbbaa771",
+  "python": "3.14.6",
+  "reference_enumerations": false,
+  "research_scan": true
+}

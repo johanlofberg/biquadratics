@@ -1,0 +1,1099 @@
+{
+  "accepted_count": 7,
+  "candidates": 91,
+  "decisions": [
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        5
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        10
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": true,
+      "edge": [
+        4,
+        13
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": true,
+      "edge": [
+        4,
+        14
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        20
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        21
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        22
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        30
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        31
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        39
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        4,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        10
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        13
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        14
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        20
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        21
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        22
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        31
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        37
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        39
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        43
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        5,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        13
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        14
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        20
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        21
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        22
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        30
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        31
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        10,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        14
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        20
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        21
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        22
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        31
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        37
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        13,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": true,
+      "edge": [
+        13,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        20
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        21
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        22
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        31
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": true,
+      "edge": [
+        14,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        43
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        14,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        21
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        22
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        31
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        37
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        20,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        22
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        31
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        37
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        43
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        21,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        22,
+        30
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": true,
+      "edge": [
+        22,
+        31
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": true,
+      "edge": [
+        22,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": false,
+      "edge": [
+        22,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        22,
+        43
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        22,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        30,
+        31
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        30,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        30,
+        39
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        30,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        30,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        31,
+        37
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        31,
+        39
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        31,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": true,
+      "edge": [
+        31,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": true
+    },
+    {
+      "accepted": false,
+      "edge": [
+        37,
+        39
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        37,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        37,
+        47
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2'"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        39,
+        43
+      ],
+      "filter": {
+        "accepted": false,
+        "reason": "W2"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        39,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    },
+    {
+      "accepted": false,
+      "edge": [
+        43,
+        47
+      ],
+      "filter": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "rw3": false
+    }
+  ],
+  "starting_witness": "weak_7x7_total28.json"
+}

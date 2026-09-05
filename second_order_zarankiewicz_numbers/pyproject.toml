@@ -1,0 +1,7 @@
+[project]
+name = "sodn-reproducibility"
+version = "1.0.0"
+description = "Exact reproducibility tools for Second Order Zarankiewicz Number"
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Johan Lofberg"}, {name = "Liqun Qi"}]

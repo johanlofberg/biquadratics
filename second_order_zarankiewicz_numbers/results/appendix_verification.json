@@ -1,0 +1,134 @@
+{
+  "appendix_words_checked_by_prime": {
+    "5": 7700,
+    "7": 27860,
+    "11": 160820,
+    "13": 309140,
+    "17": 887060,
+    "19": 1375220
+  },
+  "canonical_p3_displayed_kernel_dimension": 0,
+  "exceptional_p3_transfer_graph": {
+    "closure": {
+      "accepted": false,
+      "contradiction": false,
+      "e1": 30,
+      "e2": 30,
+      "injective": true,
+      "m": 15,
+      "missing_count": 630,
+      "missing_examples": [
+        [
+          "a1",
+          "a4"
+        ],
+        [
+          "a1",
+          "a6"
+        ],
+        [
+          "a1",
+          "a8"
+        ],
+        [
+          "a1",
+          "a10"
+        ],
+        [
+          "a1",
+          "a11"
+        ],
+        [
+          "a1",
+          "a12"
+        ],
+        [
+          "a1",
+          "a13"
+        ],
+        [
+          "a1",
+          "a14"
+        ],
+        [
+          "a1",
+          "a15"
+        ],
+        [
+          "a1",
+          "a16"
+        ]
+      ],
+      "n": 6,
+      "orthogonal_class_pairs": 1140,
+      "resolved": true,
+      "rounds": 3,
+      "selected_edges": 60
+    },
+    "component_count": 340,
+    "component_counts": {
+      "grounded=false,bipartite=false": 70,
+      "grounded=true,bipartite=false": 60,
+      "grounded=true,bipartite=true": 210
+    },
+    "component_variable_counts": {
+      "grounded=false,bipartite=false": 630,
+      "grounded=true,bipartite=false": 480,
+      "grounded=true,bipartite=true": 660
+    },
+    "ground_equations": 810,
+    "off_diagonal_variables": 1770,
+    "rw3plus_unresolved_equals_odd_variables": true,
+    "selected_edge_vectors": 60,
+    "ungrounded_bipartite_components": 0,
+    "ungrounded_odd_components": 70,
+    "ungrounded_odd_size_distribution": {
+      "9": 70
+    }
+  },
+  "exceptional_p3_words": {
+    "all_closed": true,
+    "all_endpoint_valid": true,
+    "all_odd": true,
+    "words": {
+      "(0,0)": {
+        "closed": true,
+        "length": 9,
+        "odd": true
+      },
+      "(0,1)": {
+        "closed": true,
+        "length": 5,
+        "odd": true
+      },
+      "(0,2)": {
+        "closed": true,
+        "length": 7,
+        "odd": true
+      },
+      "(0,inf)": {
+        "closed": true,
+        "length": 5,
+        "odd": true
+      },
+      "(1,inf)": {
+        "closed": true,
+        "length": 5,
+        "odd": true
+      },
+      "(2,inf)": {
+        "closed": true,
+        "length": 7,
+        "odd": true
+      },
+      "(inf,inf)": {
+        "closed": true,
+        "length": 9,
+        "odd": true
+      }
+    }
+  },
+  "permutation_pairs_per_prime": 10,
+  "random_seed": 20260905,
+  "rational_elimination_cross_checks": 180
+}

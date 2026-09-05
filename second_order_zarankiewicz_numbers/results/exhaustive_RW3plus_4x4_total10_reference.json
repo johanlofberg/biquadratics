@@ -1,0 +1,189 @@
+{
+  "accepted_augmentations": [
+    {
+      "base": 0,
+      "e2": [
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "base": 0,
+      "e2": [
+        [
+          5,
+          10
+        ]
+      ]
+    },
+    {
+      "base": 0,
+      "e2": [
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "base": 0,
+      "e2": [
+        [
+          3,
+          10
+        ]
+      ]
+    },
+    {
+      "base": 0,
+      "e2": [
+        [
+          2,
+          7
+        ]
+      ]
+    },
+    {
+      "base": 0,
+      "e2": [
+        [
+          2,
+          9
+        ]
+      ]
+    }
+  ],
+  "accepted_total": 6,
+  "bases": {
+    "labeled_count": 96,
+    "m": 4,
+    "n": 4,
+    "representatives": [
+      [
+        3,
+        5,
+        9,
+        14
+      ]
+    ],
+    "sorted_row_sequences": 4,
+    "total": 9
+  },
+  "counts": [
+    {
+      "accepted": 6,
+      "base": 0,
+      "candidates": 21,
+      "predicate_calls": 21,
+      "pruned_branches": 15,
+      "rejected": 15,
+      "rejected_prefixes": [
+        [
+          [
+            10,
+            12
+          ]
+        ],
+        [
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            9,
+            12
+          ]
+        ],
+        [
+          [
+            7,
+            10
+          ]
+        ],
+        [
+          [
+            7,
+            12
+          ]
+        ],
+        [
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            5,
+            9
+          ]
+        ],
+        [
+          [
+            5,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            7
+          ]
+        ],
+        [
+          [
+            3,
+            9
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ]
+        ]
+      ],
+      "row_masks": [
+        3,
+        5,
+        9,
+        14
+      ]
+    }
+  ],
+  "criterion": "RW3+",
+  "e1_total": 9,
+  "e2_total": 1,
+  "engine": "reference",
+  "m": 4,
+  "method": "exhaustive matching tree with hereditary rejection pruning",
+  "n": 4
+}

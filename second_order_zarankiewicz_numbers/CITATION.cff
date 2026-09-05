@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using these computations."
+type: software
+title: "Reproducible computations for Second Order Zarankiewicz Number"
+version: "1.0.0"
+date-released: 2026-09-05
+authors:
+  - family-names: "Löfberg"
+    given-names: "Johan"
+  - family-names: "Qi"
+    given-names: "Liqun"
+repository-code: "https://github.com/johanlofberg/biquadratics"
+url: "https://github.com/johanlofberg/biquadratics/tree/main/second_order_zarankiewicz_numbers"

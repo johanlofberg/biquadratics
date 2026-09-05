@@ -1,0 +1,68 @@
+{
+  "coordinate_system": "zero-based [row,column]",
+  "criterion": "RW3",
+  "e1": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "e2": [
+    [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  ],
+  "m": 5,
+  "n": 3,
+  "provenance": {
+    "algorithm": "explicit manuscript construction",
+    "name": "chain_5x3"
+  },
+  "schema": 1,
+  "total": 10
+}

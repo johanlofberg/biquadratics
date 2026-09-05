@@ -1,0 +1,44 @@
+{
+  "all_compared_json_records_agree": true,
+  "complete_reference_run_from_separately_extracted_archive": {
+    "all_required_computations_passed": true,
+    "elapsed_seconds": 189.626,
+    "paper_sha256": "44d42462995b387337686c8d825bbb3af71e6bb4d07a99af4e2260de46078949",
+    "python": "3.14.6",
+    "reference_enumerations": true,
+    "research_scan": true
+  },
+  "date": "2026-09-05",
+  "final_fast_full_run": {
+    "all_required_computations_passed": true,
+    "elapsed_seconds": 45.632,
+    "paper_sha256": "e8de1e69e4f7b6839e1acca44be156f0147d23e90d0341d362086704dbbaa771",
+    "python": "3.14.6",
+    "reference_enumerations": false,
+    "research_scan": true
+  },
+  "github_ci_configured_but_not_run_remotely": true,
+  "independent_cpp": {
+    "accepted_cases": 517,
+    "all_agree": true,
+    "compiler": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r8) 13.2.0",
+    "complete_enumeration_counts_agree": true,
+    "predicate_cases": 6150
+  },
+  "note": "Numerical baseline validation preceded repository packaging. Repository packaging changes documentation, workflow location, citation links, and archive prefix; search and verification algorithms are unchanged.",
+  "paper_pdf_all_pages_visually_reviewed": true,
+  "paper_pdf_pages": 36,
+  "paper_pdf_sha256": "1b69b9091723b16970d8863b6d2d0bebb7662898abd8e3c6aa3e8620b1f607e8",
+  "paper_source_sha256": "e8de1e69e4f7b6839e1acca44be156f0147d23e90d0341d362086704dbbaa771",
+  "paper_tex_warnings": [],
+  "platform": "Windows x86_64",
+  "python": "3.14.6",
+  "python_310_runtime_tested_locally": false,
+  "python_310_syntax_parsed": true,
+  "regenerated_json_records_compared_with_release": 224,
+  "repository_layout": "biquadratics/second_order_zarankiewicz_numbers",
+  "saved_witnesses_verified": 83,
+  "scope": "Scripts, data, witnesses, documentation, and generated tables.",
+  "source_SODN_13_preserved": true,
+  "unittest_methods_passed": 6
+}
