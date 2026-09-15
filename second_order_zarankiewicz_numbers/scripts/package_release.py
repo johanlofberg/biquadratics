@@ -8,7 +8,7 @@ root = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("destination", type=Path)
 args = parser.parse_args()
-top = ["reproduce.py", "README.md", "METHODS.md", "CLAIMS.md",
+top = ["reproduce.py", "README.md", "METHODS.md", "CLAIMS.md", "MANUSCRIPT.md",
        "SOURCE_PROVENANCE.json", "pyproject.toml", "CITATION.cff",
        "LICENSE", ".gitignore", ".gitattributes", "RELEASE_VALIDATION.json"]
 files = [root / name for name in top if (root / name).is_file()]
@@ -33,7 +33,7 @@ with zipfile.ZipFile(args.destination, "w", compression=zipfile.ZIP_DEFLATED,
     for path in sorted(files, key=lambda p: p.relative_to(root).as_posix()):
         info = zipfile.ZipInfo("second_order_zarankiewicz_numbers/" +
                               path.relative_to(root).as_posix(),
-                              date_time=(2026, 9, 5, 0, 0, 0))
+                              date_time=(2026, 9, 15, 0, 0, 0))
         info.compress_type = zipfile.ZIP_DEFLATED
         info.create_system = 3
         info.external_attr = 0o100644 << 16

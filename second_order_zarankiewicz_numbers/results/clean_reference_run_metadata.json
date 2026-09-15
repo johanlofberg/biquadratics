@@ -1,4 +1,6 @@
 {
+  "status": "Historical clean reference run against the pre-v3 SODN_13.tex source; retained to document the released computation baseline.",
+  "source_manuscript": "SODN_13.tex",
   "all_required_computations_passed": true,
   "elapsed_seconds": 189.626,
   "paper_sha256": "44d42462995b387337686c8d825bbb3af71e6bb4d07a99af4e2260de46078949",

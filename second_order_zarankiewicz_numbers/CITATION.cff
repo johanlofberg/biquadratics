@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the accompanying paper when using these computations."
 type: software
 title: "Reproducible computations for Second Order Zarankiewicz Number"
-version: "1.0.0"
-date-released: 2026-09-05
+version: "1.1.0"
+date-released: 2026-09-15
 authors:
   - family-names: "Löfberg"
     given-names: "Johan"

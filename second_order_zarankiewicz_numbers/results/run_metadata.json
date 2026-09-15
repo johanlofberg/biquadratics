@@ -1,8 +1,14 @@
 {
   "all_required_computations_passed": true,
-  "elapsed_seconds": 45.632,
-  "paper_sha256": "e8de1e69e4f7b6839e1acca44be156f0147d23e90d0341d362086704dbbaa771",
+  "elapsed_seconds": 289.938,
+  "manuscript": {
+    "identifier": "arXiv:2608.30555v3",
+    "pages": 44,
+    "printed_date": "2026-09-15",
+    "supplied_pdf_sha256": "e4e0149e54395771ff28bd6e291c59e9b6a3a94922900b51936fc5551dbfca6d"
+  },
   "python": "3.14.6",
-  "reference_enumerations": false,
-  "research_scan": true
+  "reference_enumerations": true,
+  "research_scan": true,
+  "signed_p3_independent_checkers_agree": true
 }

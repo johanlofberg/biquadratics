@@ -2,6 +2,8 @@
 
 This folder contains the scripts, data, explicit witnesses, and independent
 verifiers for the paper by Johan Löfberg and Liqun Qi.
+[MANUSCRIPT.md](MANUSCRIPT.md) identifies the matched 44-page
+arXiv:2608.30555v3 manuscript and its SHA-256 digest.
 [METHODS.md](METHODS.md) explains coverage and interpretation, and
 [CLAIMS.md](CLAIMS.md) maps the numerical claims to reproducible evidence.
 
@@ -31,13 +33,16 @@ From this project folder, second_order_zarankiewicz_numbers:
 ~~~console
 python scripts/verify_manifest.py
 python reproduce.py verify
+python reproduce.py signed-p3
 python reproduce.py all --reference --research
 python -m unittest discover -s tests -v
 ~~~
 
 On Windows, use py -3 in place of python if necessary. The checksum command verifies the archived files. The verify command
 checks the saved witnesses using two independently written exact closure
-implementations and rechecks all 91 extensions. The all command regenerates the
+implementations, rechecks all 91 extensions, and runs the two signed p=3
+checkers. The focused signed-p3 command records both independent checks of
+Theorem 7.5. The all command regenerates the
 base classifications, exhaustive searches, benchmark, complete Gram survivor
 lists, and appendix checks. The --reference option repeats the recursive
 searches with the direct cell-level implementation and compares its complete
@@ -62,6 +67,7 @@ python reproduce.py enumerate 7 4 13 18 --criterion weak
 python reproduce.py discover 5 5 12 17
 python reproduce.py discover 7 7 21 32 --criterion RW3+ --seed 20260905 --restarts 250
 python reproduce.py benchmark77
+python reproduce.py signed-p3
 python reproduce.py survivors
 ~~~
 
@@ -96,16 +102,22 @@ Accepted normalized-prefix counts at sizes 1 through 8 are
 - results/ stores expected counts, every rejected search prefix, and every
   accepted augmentation at the enumerated totals.
 - results/gram_survivors.json exports all canonical survivors at totals
-  13, 14, and 15; its flattened cell IDs mean row*4+column.
+  13, 14, and 15 from the historical Gram screening; its flattened cell IDs
+  mean row*4+column.
+- results/signed_p3_verification.json records both independent checks of the
+  signed 15 x 6 construction used in Theorem 7.5.
 - certificates/fano_symmetry.json supplies the actual 168 automorphisms.
 - sodn/reference.py and sodn/core.py independently implement RW3/RW3+.
 - tests/ checks these implementations and compares pruning with unpruned runs.
-- SOURCE_PROVENANCE.json identifies supplied sources used in the portable code.
+- SOURCE_PROVENANCE.json identifies the historical supplied sources from which
+  the portable code was prepared.
 - SHA256SUMS.txt records the released file contents.
 
 Zero displayed-basis kernel alone is not an irreducibility certificate.
-The 1,052 total-14 and 119 total-15 cases remain unresolved. This package
-does not determine z2(5,4); the correct interval is 13 <= z2(5,4) <= 15.
+The 1,052 total-14 and 119 total-15 cases are retained as historical survivors
+of that limited screening procedure. They are not unresolved mathematical
+cases: Appendix B of arXiv:2608.30555v3 proves that all are reducible and that
+z2(5,4)=13.
 The infinite theorems rely on the mathematical proofs. Finite tests are
 explicitly described as supporting checks. Weak three-column values use the
 [Qi–Löfberg–Chen theorem, version 3](https://arxiv.org/html/2608.06050v3).

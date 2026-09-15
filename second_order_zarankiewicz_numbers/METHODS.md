@@ -33,7 +33,12 @@ coverage arguments explain how the generated records support upper bounds.
    zero. I-H/lambda_max(H) is positive semidefinite and singular, so the
    polynomial has a shorter SOS. This implication does not need universal
    resolution. The converse does.
-8. Scope: chain tests cover m=3,...,50. Appendix tests check the seven
+8. Signed incidence check: `python reproduce.py signed-p3` runs two
+   independently written implementations on the 15 x 6 witness. The generic
+   signed fixed-point checker is in `sodn/signed.py`; the incidence-specific
+   transfer-graph checker is in `sodn/reference.py`. Their full outputs and
+   agreement are recorded in `results/signed_p3_verification.json`.
+9. Scope: chain tests cover m=3,...,50. Appendix tests check the seven
    exceptional p=3 words and 2,767,800 words for six larger primes with
    recorded seeded label permutations. The infinite claims use the proofs;
    the finite computations do not replace them.
@@ -77,5 +82,8 @@ positive semidefinite and singular and represents the same polynomial,
 which certifies a shorter sum of squares.
 
 A zero kernel does not prove irreducibility unless universal resolution
-has separately been established. This is why the exported total-14 and
-total-15 survivors are unresolved research cases.
+has separately been established. The exported total-14 and total-15 survivors
+are therefore retained as historical outputs of this particular screening
+procedure, not as unresolved mathematical cases. Appendix B of
+arXiv:2608.30555v3 proves that all such augmentations are reducible and hence
+that z2(5,4)=13.

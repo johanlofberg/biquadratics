@@ -8,6 +8,7 @@ from sodn.benchmark import FixedWeak
 from sodn.search import fano_base,exhaustive
 from sodn.bases import enumerate_bases,cells_from_rows,matchings
 from sodn.io import witness,unpack
+from sodn.tasks import verify_signed_p3
 
 class VerifierTests(unittest.TestCase):
     def test_independent_closures_on_random_simple_supports(self):
@@ -32,6 +33,12 @@ class VerifierTests(unittest.TestCase):
         flat=lambda c:(c[0]-1)*6+c[1]-1
         r=Geometry(15,6).check([flat(c) for c in e1],[(flat(a),flat(b)) for a,b in e2],True,True)
         self.assertTrue(r['resolved']);self.assertFalse(r['accepted'])
+    def test_independent_signed_p3_checkers(self):
+        result=verify_signed_p3(save=False)
+        self.assertTrue(result['generic_signed_closure']['accepted'])
+        self.assertTrue(result['incidence_specific_transfer_graph']['witness_matches_canonical_construction'])
+        self.assertTrue(result['incidence_specific_transfer_graph']['accepted_by_signed_criterion'])
+        self.assertTrue(result['independent_checkers_agree'])
     def test_pruning_against_unpruned_enumeration(self):
         for m,n,z,ks in ((4,4,9,(1,2,3)),(5,4,10,(3,4,5)),(6,4,12,(6,))):
             bases=enumerate_bases(m,n,z);geo=Geometry(m,n)

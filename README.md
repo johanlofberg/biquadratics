@@ -5,7 +5,7 @@ rank, and related extremal graph problems.
 
 | Project | Contents |
 |---|---|
-| [Second order Zarankiewicz numbers](second_order_zarankiewicz_numbers/) | Exact searches, explicit witnesses, independent verifiers, and data for the work of Johan Löfberg and Liqun Qi. |
+| [Second order Zarankiewicz numbers](second_order_zarankiewicz_numbers/) | Manuscript-matched exact searches, explicit witnesses, independent verifiers, and data for arXiv:2608.30555v3 by Johan Löfberg and Liqun Qi. |
 
 ## Quick start
 

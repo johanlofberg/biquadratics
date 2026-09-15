@@ -26,6 +26,10 @@ def enumerate_survivors(save=True):
     result={'m':5,'n':4,'cell_encoding':'zero-based row*4+column',
             'bases':bases['representatives'],'records':records,
             'classes':all_survivors,
-            'interpretation':'Zero displayed-basis kernel does not certify irreducibility without universal resolution.'}
+            'interpretation':(
+                'Historical output of the displayed-basis Gram screening. Zero kernel does not '
+                'certify irreducibility without universal resolution. The Appendix B proof in '
+                'arXiv:2608.30555v3 supersedes the former open-status interpretation and proves '
+                'that every total-14 and total-15 case is reducible.')}
     if save:write_json(ROOT/'results'/'gram_survivors.json',result)
     return result

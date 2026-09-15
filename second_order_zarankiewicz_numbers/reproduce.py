@@ -17,7 +17,7 @@ def main():
             q.add_argument('--seed',type=int,default=20260905)
             q.add_argument('--restarts',type=int,default=10000)
     sub.add_parser('benchmark77')
-    sub.add_parser('verify');sub.add_parser('survivors');sub.add_parser('research')
+    sub.add_parser('verify');sub.add_parser('signed-p3');sub.add_parser('survivors');sub.add_parser('research')
     q=sub.add_parser('all');q.add_argument('--reference',action='store_true');q.add_argument('--research',action='store_true')
     a=p.parse_args()
     os.environ['SODN_OUTPUT_DIR']=str(a.output.resolve())
@@ -33,6 +33,7 @@ def main():
         print('Verified total:',result['total'])
     elif a.command=='benchmark77':print(json.dumps(tasks.run_benchmark(),indent=2))
     elif a.command=='verify':print(json.dumps(tasks.verify_release(),indent=2))
+    elif a.command=='signed-p3':print(json.dumps(tasks.verify_signed_p3(),indent=2))
     elif a.command=='survivors':
         from sodn.survivors import enumerate_survivors
         r=enumerate_survivors()

@@ -1,5 +1,5 @@
 """Release reproduction tasks and expected mathematical results."""
-import json,hashlib,platform,time
+import json,platform,time
 from pathlib import Path
 from .io import ROOT,PROJECT_ROOT,write_json,verify,witness,unpack
 from .bases import enumerate_bases,fano_classification
@@ -8,6 +8,13 @@ from .benchmark import weak77_upper,extensions
 from .survivors import enumerate_survivors
 from .fixtures import export_fixtures
 from .weak import weak_check
+
+MANUSCRIPT={
+ 'identifier':'arXiv:2608.30555v3',
+ 'printed_date':'2026-09-15',
+ 'pages':44,
+ 'supplied_pdf_sha256':'e4e0149e54395771ff28bd6e291c59e9b6a3a94922900b51936fc5551dbfca6d',
+}
 
 SPECS=[
  (4,4,9,12,'RW3+',0),(4,4,9,11,'RW3+',0),(4,4,9,10,'RW3+',6),
@@ -91,7 +98,49 @@ def verify_release():
     recorded=json.loads((PROJECT_ROOT/'results'/'benchmark77_extensions.json').read_text(encoding='utf-8'))
     if current!=recorded:raise AssertionError('Benchmark decision record changed')
     write_json(ROOT/'results'/'release_verification.json',results)
-    return {'verified_witness_files':len(results),'benchmark_candidates':91}
+    signed=verify_signed_p3()
+    return {'verified_witness_files':len(results),'benchmark_candidates':91,
+            'signed_p3_independent_checkers_agree':signed['independent_checkers_agree']}
+
+def verify_signed_p3(save=True):
+    """Run the generic and incidence-specific signed checks for Theorem 7.5."""
+    data=json.loads((PROJECT_ROOT/'witnesses'/'incidence_p3.json').read_text(encoding='utf-8'))
+    m,n,e1,e2=unpack(data)
+    one=lambda c:(c//n+1,c%n+1)
+    from .signed import signed_deviation
+    from .reference import p3_incidence_instance,p3_transfer_graph
+    generic=signed_deviation(m,n,[one(c) for c in e1],[(one(a),one(b)) for a,b in e2])
+    canonical_e1,canonical_e2,_=p3_incidence_instance()
+    flat=lambda c:(c[0]-1)*n+c[1]-1
+    witness_matches=(set(e1)=={flat(c) for c in canonical_e1} and
+                     {frozenset(edge) for edge in e2}==
+                     {frozenset((flat(a),flat(b))) for a,b in canonical_e2})
+    specific=p3_transfer_graph()
+    closure=specific['closure']
+    specific_accepts=(witness_matches and closure['resolved'] and closure['injective'] and
+                      not closure['contradiction'] and
+                      specific['selected_edge_vectors']==data['total'] and
+                      specific['ungrounded_bipartite_components']==0 and
+                      specific['ungrounded_odd_components']>0)
+    if not generic['accepted'] or not specific_accepts:
+        raise AssertionError('Independent signed p=3 verification failed')
+    result={
+        'claim':'zSL(15,6)=z2(15,6)=60',
+        'witness':'witnesses/incidence_p3.json',
+        'generic_signed_closure':{
+            'implementation':'sodn/signed.py:signed_deviation',
+            **generic,
+        },
+        'incidence_specific_transfer_graph':{
+            'implementation':'sodn/reference.py:p3_transfer_graph',
+            'witness_matches_canonical_construction':witness_matches,
+            'accepted_by_signed_criterion':specific_accepts,
+            **specific,
+        },
+        'independent_checkers_agree':True,
+    }
+    if save:write_json(ROOT/'results'/'signed_p3_verification.json',result)
+    return result
 
 def research():
     from .signed import signed_deviation
@@ -135,11 +184,12 @@ def all_checks(reference=False,include_research=False):
     a['exceptional_p3_transfer_graph']=p3_transfer_graph()
     write_json(ROOT/'results'/'appendix_verification.json',a)
     if sum(a['appendix_words_checked_by_prime'].values())!=2767800:raise AssertionError('Appendix count changed')
+    signed=verify_signed_p3()
     if include_research:research()
-    paper=PROJECT_ROOT/'paper'/'SODN_reproducible.tex'
     metadata={'python':platform.python_version(),'all_required_computations_passed':True,
               'reference_enumerations':reference,'research_scan':include_research,
-              'paper_sha256':hashlib.sha256(paper.read_bytes()).hexdigest() if paper.exists() else None,
+              'manuscript':MANUSCRIPT,
+              'signed_p3_independent_checkers_agree':signed['independent_checkers_agree'],
               'elapsed_seconds':round(time.monotonic()-started,3)}
     write_json(ROOT/'results'/'run_metadata.json',metadata)
     return metadata
